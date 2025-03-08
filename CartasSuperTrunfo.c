@@ -1,22 +1,63 @@
-#include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+  #include <stdio.h>
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+int main(){
+  int pop1, pop2, pturisticos1, pturisticos2;
+  float area1, area2, pib1, pib2;
 
-    return 0;
-}
+printf("===================\n");
+printf("SUPER TRUNFO!!\n");
+printf("===================\n");
+
+   printf("Rio de Janeiro-RJ\n");
+    printf("Código: A01\n");
+
+printf("Aqui você determinará os atributos dessa cidade!\n");
+printf("\n");
+  printf("Quantas pessoas tem nessa cidade?: ");
+scanf("%d", &pop1);
+  printf("Qual a Área dessa cidade(m²)? : ");
+scanf("%f", &area1);
+  printf("Qual o PIB?: ");
+scanf("%f", &pib1);
+  printf("Quantos pontos turísticos ela tem?: ");
+scanf("%d", &pturisticos1);
+
+printf("================================================\n");
+
+  printf("São Paulo-SP\n");
+    printf("Código: B01\n");
+ printf(" ");
+printf("Determine agora os atributos dessa outra cidade!\n");
+printf(" ");
+
+  printf("Quantas pessoas tem nessa cidade?: ");
+scanf("%d", &pop2);
+  printf("Qual a Área dessa cidade(m²)? : ");
+scanf("%f", &area2);
+  printf("Qual o PIB?: ");
+scanf("%f", &pib2);
+  printf("Quantos pontos turísticos ela tem?: ");
+scanf("%d", &pturisticos2);
+
+printf("==============================================\n");
+ printf("Dados: \n");
+  printf("Cidade 1:Rio de janeiro-RJ\n");
+    printf("Código:A01\n");
+       printf("População:%d\n", pop1);
+        printf("Área:%.2f\n", area1);
+         printf("PIB:%.2f\n", pib1);
+          printf("Pontos turísticos:%d\n", pturisticos1);
+
+printf("==============================================\n");
+  printf("Cidade 2:São paulo-SP\n");
+    printf("Código:B01\n");
+       printf("População:%d\n", pop2);
+        printf("Área:%.2f\n", area2);
+         printf("PIB:%.2f\n", pib2);
+          printf("Pontos turísticos:%d\n", pturisticos2);
+
+
+return 0;
+
+ }
